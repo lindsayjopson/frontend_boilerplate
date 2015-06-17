@@ -1,0 +1,1242 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    KITCHEN-SINK.CSS - FOR THE KITCHEN SINK DEMO
+\*------------------------------------*/
+/**
+ *
+ * sass --watch style.scss:style.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+/**
+ * Setup
+ */
+/*------------------------------------*\
+    $THEME
+\*------------------------------------*/
+/**
+ * Colour Swatch
+ */
+/*-------------------------------------*\
+	$MODULE COLOURS -
+	NOTE: Variables use BEM style and should use the following convention:
+	$module__subitem--modifier-property. Examples:
+	$lightbox__overlay-background
+	$button--active-color
+\*------------------------------------*/
+/*------------------------------------*\
+    $DEBUG
+\*------------------------------------*/
+/**
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `true` or `false`.
+ */
+/*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+/*------------------------------------*\
+    $BEAUTONS
+\*------------------------------------*/
+/**
+ * Set the background colors for beauton button functions.
+ */
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+/**
+ * Brand stuff
+ */
+/**
+ * How big would you like round corners to be by default?
+ */
+/*------------------------------------*\
+    $OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+/*------------------------------------*\
+    $TERABYTE OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
+/**
+ * Responsiveness?
+ */
+/**
+ * Responsiveness for widescreen/high resolution desktop monitors and beyond?
+ * Note: `$terabyte-responsive` variable above must be set to true before enabling this.
+ */
+/**
+ * Responsive push and pull produce a LOT of code, only turn them on if you
+ * definitely need them.
+ */
+/**
+ * Note: `$terabyte-push` variable above must be set to true before enabling these.
+ */
+/**
+ * Note: `$terabyte-pull` variable above must be set to true before enabling these.
+ */
+/**
+ * Tell terabytenz.css when breakpoints start and end.
+ */
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+/**
+ * inuit.css will work these next ones out for use within the framework.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+/*------------------------------------*\
+    $DEFAULTS
+\*------------------------------------*/
+/**
+ * inuit.cssÔÇÖ default variables. Redefine these in your `_vars.scss` file (found
+ * in the inuit.css-web-template) to override them.
+ */
+/*------------------------------------*\
+    $DEBUG
+\*------------------------------------*/
+/**
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `true` or `false`.
+ */
+/*------------------------------------*\
+    $BORDER-BOX
+\*------------------------------------*/
+/**
+ * Do you want all elements to adopt `box-sizing:border-box;` as per
+ * paulirish.com/2012/box-sizing-border-box-ftw ?
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base stuff
+ */
+/**
+ * Base font-family.
+ */
+/**
+ * Default colour for objectsÔÇÖ borders etc.
+ */
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
+/**
+ * Responsiveness?
+ */
+/**
+ * Responsiveness for widescreen/high resolution desktop monitors and beyond?
+ * Note: `$responsive` variable above must be set to true before enabling this.
+ */
+/**
+ * Responsive push and pull produce a LOT of code, only turn them on if you
+ * definitely need them.
+ */
+/**
+ * Note: `$push` variable above must be set to true before enabling these.
+ */
+/**
+ * Note: `$pull` variable above must be set to true before enabling these.
+ */
+/**
+ * Tell inuit.css when breakpoints start.
+ */
+/*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+/*------------------------------------*\
+    $BEAUTONS
+\*------------------------------------*/
+/**
+ * Set the background colors for beauton button functions.
+ */
+/*------------------------------------*\
+    $QUOTES
+\*------------------------------------*/
+/**
+ * English quote marks?
+ */
+/**
+ * If you want English quotes then please do not edit these; theyÔÇÖre only here
+ * because Sass needs them.
+ */
+/**
+ * If you need non-English quotes, please alter the following values accordingly:
+ */
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+/**
+ * Brand stuff
+ */
+/**
+ * How big would you like round corners to be by default?
+ */
+/*------------------------------------*\
+    $OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+/**
+ * inuit.css will work these next ones out for use within the framework.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+/*------------------------------------*\
+	$TERABYTE INUIT.CSS FRAMEWORK VARIABLES
+\*------------------------------------*/
+/**
+ * At Terabyte we maintain our own Inuit.css-esque components. Similar to Inuit.css we set our overrides here
+ */
+/*------------------------------------*\
+	$IMPORTS
+\*------------------------------------*/
+/**
+ * Colour assignment for base styles
+ */
+/*------------------------------------*\
+	$COLOUR THEME
+\*------------------------------------*/
+/**
+ * Colour assignment for base styles
+ */
+/*-------------------------------------*\
+	$MODULE COLOURS -
+	NOTE: Variables use BEM style and should use the following convention:
+	$module__subitem--modifier-property. Examples:
+	$lightbox__overlay-background
+	$button--active-color
+\*------------------------------------*/
+/*------------------------------------*\
+	$RESPONSIVE
+\*------------------------------------*/
+/**
+ * Responsiveness?
+ */
+/**
+ * Responsiveness for widescreen/high resolution desktop monitors and beyond?
+ * Note: `$terabyte-responsive` variable above must be set to true before enabling this.
+ */
+/**
+ * Responsive push and pull produce a LOT of code, only turn them on if you
+ * definitely need them.
+ */
+/**
+ * Note: `$terabyte-push` variable above must be set to true before enabling these.
+ */
+/**
+ * Note: `$terabyte-pull` variable above must be set to true before enabling these.
+ */
+/**
+ * Tell terabytenz.css when breakpoints start and end.
+ */
+/*------------------------------------*\
+	$FONT-SIZES
+\*------------------------------------*/
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+/*------------------------------------*\
+	$TERABYTE OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+/*------------------------------------*\
+	$FRAMEWORK
+\*------------------------------------*/
+/**
+ * inuit.css will work these next ones out for use within the framework.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   `@include font-size(10px);`
+ *
+ * Thanks to @redclov3r for the `line-height` Sass:
+ * twitter.com/redclov3r/status/250301539321798657
+ */
+/**
+ * Style any number of headings in one fell swoop, e.g.:
+ *
+   .foo{
+       @include headings(1, 3){
+           color:#BADA55;
+       }
+    }
+ *
+ * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
+ * @thierrylemoulec for refining and improving my initial mixin.
+ */
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(border-radius, 4px);`
+ *
+ */
+/**
+ * Create CSS keyframe animations for all vendors in one go, e.g.:
+ *
+   .foo{
+       @include vendor(animation, shrink 3s);
+   }
+
+   @include keyframe(shrink){
+       from{
+           font-size:5em;
+       }
+   }
+ *
+ * Courtesy of @integralist: twitter.com/integralist/status/260484115315437569
+ */
+/**
+ * Force overly long spans of text to truncate, e.g.:
+ *
+   `@include truncate(100%);`
+ *
+ * Where `$truncation-boundary` is a united measurement.
+ */
+/**
+ * Media query for targetting retina devices, e.g.:
+ *
+   .foo{
+       background-image:url(1x.png);
+       @include retina(){
+           background-image:url(2x.png);
+       }
+   }
+ *
+ */
+/**
+ * CSS arrows!!! But... before you read on, you might want to grab a coffee...
+ *
+ * This mixin creates a CSS arrow on a given element. We can have the arrow
+ * appear in one of 12 locations, thus:
+ *
+ *       01    02    03
+ *    +------------------+
+ * 12 |                  | 04
+ *    |                  |
+ * 11 |                  | 05
+ *    |                  |
+ * 10 |                  | 06
+ *    +------------------+
+ *       09    08    07
+ *
+ * You pass this position in along with a desired arrow color and optional
+ * border color, for example:
+ *
+ * `@include arrow(top, left, red)`
+ *
+ * for just a single, red arrow, or:
+ *
+ * `@include arrow(bottom, center, red, black)`
+ *
+ * which will create a red triangle with a black border which sits at the bottom
+ * center of the element. Call the mixin thus:
+ *
+   .foo{
+       background-color:#BADA55;
+       border:1px solid #ACE;
+       @include arrow(top, left, #BADA55, #ACE);
+   }
+ *
+ */
+/**
+ * Media query mixin.
+ *
+ * ItÔÇÖs not great practice to define solid breakpoints up-front, preferring to
+ * modify your design when it needs it, rather than assuming youÔÇÖll want a
+ * change at ÔÇÿmobileÔÇÖ. However, as inuit.css is required to take a hands off
+ * approach to design decisions, this is the closest we can get to baked-in
+ * responsiveness. ItÔÇÖs flexible enough to allow you to set your own breakpoints
+ * but solid enough to be frameworkified.
+ *
+ * We define some broad breakpoints in our vars file that are picked up here
+ * for use in a simple media query mixin. Our options are:
+ *
+ * palm
+ * lap
+ * lap-and-up
+ * portable
+ * desk
+ * desk-wide
+ *
+ * Not using a media query will, naturally, serve styles to all devices.
+ *
+ * `@include media-query(palm){ [styles here] }`
+ *
+ * We work out your end points for you:
+ */
+/*------------------------------------*\
+    $HELPER
+\*------------------------------------*/
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesnÔÇÖt already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ * A lot of these classes carry `!important` as you will always want them to win
+ * out over other selectors.
+ */
+/**
+ * Add/remove floats
+ */
+.float--right {
+  float: right !important;
+}
+
+.float--left {
+  float: left !important;
+}
+
+.float--none {
+  float: none !important;
+}
+
+/**
+ * Text alignment
+ */
+.text--left {
+  text-align: left  !important;
+}
+
+.text--center {
+  text-align: center !important;
+}
+
+.text--right {
+  text-align: right !important;
+}
+
+/**
+ * Font weights
+ */
+.weight--light {
+  font-weight: 300 !important;
+}
+
+.weight--normal {
+  font-weight: 400 !important;
+}
+
+.weight--semibold {
+  font-weight: 600 !important;
+}
+
+/**
+ * Add/remove margins
+ */
+.push {
+  margin: 20px !important;
+}
+
+.push--top, hr {
+  margin-top: 20px !important;
+}
+
+.push--right {
+  margin-right: 20px !important;
+}
+
+.push--bottom {
+  margin-bottom: 20px !important;
+}
+
+.push--left {
+  margin-left: 20px !important;
+}
+
+.push--ends {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.push--sides {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+
+.push-half {
+  margin: 10px !important;
+}
+
+.push-half--top {
+  margin-top: 10px !important;
+}
+
+.push-half--right {
+  margin-right: 10px !important;
+}
+
+.push-half--bottom {
+  margin-bottom: 10px !important;
+}
+
+.push-half--left {
+  margin-left: 10px !important;
+}
+
+.push-half--ends {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.push-half--sides {
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+
+.flush {
+  margin: 0 !important;
+}
+
+.flush--top {
+  margin-top: 0 !important;
+}
+
+.flush--right {
+  margin-right: 0 !important;
+}
+
+.flush--bottom {
+  margin-bottom: 0 !important;
+}
+
+.flush--left {
+  margin-left: 0 !important;
+}
+
+.flush--ends {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.flush--sides {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/**
+ * Add/remove paddings
+ */
+.soft {
+  padding: 20px !important;
+}
+
+.soft--top {
+  padding-top: 20px !important;
+}
+
+.soft--right {
+  padding-right: 20px !important;
+}
+
+.soft--bottom {
+  padding-bottom: 20px !important;
+}
+
+.soft--left {
+  padding-left: 20px !important;
+}
+
+.soft--ends {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.soft--sides {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.soft-half {
+  padding: 10px !important;
+}
+
+.soft-half--top {
+  padding-top: 10px !important;
+}
+
+.soft-half--right {
+  padding-right: 10px !important;
+}
+
+.soft-half--bottom {
+  padding-bottom: 10px !important;
+}
+
+.soft-half--left {
+  padding-left: 10px !important;
+}
+
+.soft-half--ends {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.soft-half--sides {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+.hard {
+  padding: 0 !important;
+}
+
+.hard--top {
+  padding-top: 0 !important;
+}
+
+.hard--right {
+  padding-right: 0 !important;
+}
+
+.hard--bottom {
+  padding-bottom: 0 !important;
+}
+
+.hard--left {
+  padding-left: 0 !important;
+}
+
+.hard--ends {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.hard--sides {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/**
+ * Pull items full width of `.island` parents.
+ */
+.full-bleed {
+  margin-right: -20px !important;
+  margin-left: -20px !important;
+}
+.islet .full-bleed {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+
+/**
+ * Add a help cursor to any element that gives the user extra information on
+ * `:hover`.
+ */
+.informative {
+  cursor: help !important;
+}
+
+/**
+ * Mute an object by reducing its opacity.
+ */
+.muted {
+  opacity: 0.5 !important;
+  filter: alpha(opacity=50) !important;
+}
+
+/**
+ * Align items to the right where they imply progression/movement forward, e.g.:
+ *
+   <p class=proceed><a href=#>Read more...</a></p>
+ *
+ */
+.proceed {
+  text-align: right !important;
+}
+
+/**
+ * Add a right-angled quote to links that imply movement, e.g.:
+ *
+   <a href=# class=go>Read more</a>
+ *
+ */
+.go:after {
+  content: " " "»" !important;
+}
+
+/**
+ * Apply capital case to an element (usually a `strong`).
+ */
+.caps {
+  text-transform: uppercase !important;
+}
+
+/**
+ * Hide content off-screen without resorting to `display:none;`, also provide
+ * breakpoint specific hidden elements.
+ */
+.accessibility,
+.visuallyhidden {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+/* @mixin ceaser-transition(transition property, duration, ease type, delay) */
+/*------------------------------------*\
+    $ARROWS
+\*------------------------------------*/
+/**
+ * It is a common design treatment to give an element a triangular points-out
+ * arrow, we typically build these with CSS. These following classes allow us to
+ * generate these arbitrarily with a mixin, `@arrow()`.
+ */
+/**
+ * Forms the basis for any/all CSS arrows.
+ */
+.test-arrow--top-left, .test-arrow--top-right, .test-arrow--top-center, .test-arrow--right-top, .test-arrow--left-top, .test-arrow--right-center, .test-arrow--left-center, .test-arrow--right-bottom, .test-arrow--left-bottom, .test-arrow--bottom-left, .test-arrow--bottom-center, .test-arrow--bottom-right {
+  position: relative;
+}
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--right-top:before, .test-arrow--left-top:before, .test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-bottom:before, .test-arrow--left-bottom:before, .test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before, .test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after, .test-arrow--right-top:after, .test-arrow--left-top:after, .test-arrow--right-center:after, .test-arrow--left-center:after, .test-arrow--right-bottom:after, .test-arrow--left-bottom:after, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  content: "";
+  position: absolute;
+  border-collapse: separate;
+}
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--right-top:before, .test-arrow--left-top:before, .test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-bottom:before, .test-arrow--left-bottom:before, .test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before {
+  border: 10px solid transparent;
+}
+.test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after, .test-arrow--right-top:after, .test-arrow--left-top:after, .test-arrow--right-center:after, .test-arrow--left-center:after, .test-arrow--right-bottom:after, .test-arrow--left-bottom:after, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  border: 9px solid transparent;
+}
+
+/**
+ * Define individual edges so we can combine what we need, when we need.
+ */
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after {
+  bottom: 100%;
+}
+
+.test-arrow--right-top:before, .test-arrow--left-top:before {
+  top: 9px;
+}
+.test-arrow--right-top:after, .test-arrow--left-top:after {
+  top: 10px;
+}
+
+.test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-center:after, .test-arrow--left-center:after {
+  top: 50%;
+  margin-top: -10px;
+}
+.test-arrow--right-center:after, .test-arrow--left-center:after {
+  margin-top: -9px;
+}
+
+.test-arrow--right-bottom:before, .test-arrow--left-bottom:before {
+  bottom: 9px;
+}
+.test-arrow--right-bottom:after, .test-arrow--left-bottom:after {
+  bottom: 10px;
+}
+
+.test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  top: 100%;
+}
+
+.test-arrow--left-top:before, .test-arrow--left-center:before, .test-arrow--left-bottom:before, .test-arrow--left-top:after, .test-arrow--left-center:after, .test-arrow--left-bottom:after {
+  right: 100%;
+}
+
+.test-arrow--top-left:before, .test-arrow--bottom-left:before {
+  left: 9px;
+}
+.test-arrow--top-left:after, .test-arrow--bottom-left:after {
+  left: 10px;
+}
+
+.test-arrow--top-center:before, .test-arrow--bottom-center:before, .test-arrow--top-center:after, .test-arrow--bottom-center:after {
+  left: 50%;
+  margin-left: -10px;
+}
+.test-arrow--top-center:after, .test-arrow--bottom-center:after {
+  margin-left: -9px;
+}
+
+.test-arrow--top-right:before, .test-arrow--bottom-right:before {
+  right: 9px;
+}
+.test-arrow--top-right:after, .test-arrow--bottom-right:after {
+  right: 10px;
+}
+
+.test-arrow--right-top:before, .test-arrow--right-center:before, .test-arrow--right-bottom:before, .test-arrow--right-top:after, .test-arrow--right-center:after, .test-arrow--right-bottom:after {
+  left: 100%;
+}
+
+body {
+  padding-top: 80px;
+  background: #ccc !important;
+}
+
+.kitchensink__menu {
+  *zoom: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 4.28571em;
+  padding: 0 1em;
+  color: #ffffff;
+  background-color: #b31111;
+}
+.kitchensink__menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.kitchensink__menu.is-hidden {
+  display: none;
+}
+
+.kitchensink__nav {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.kitchensink__nav > li {
+  display: block;
+  float: left;
+  height: 4.28571em;
+  padding: 0 1.42857em;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 3.75;
+  vertical-align: middle;
+}
+.kitchensink__nav > li:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.kitchensink__heading {
+  float: left;
+  padding: 0.71429em 2.14286em 0 0;
+}
+.kitchensink__heading span {
+  display: block;
+  line-height: 1;
+}
+
+.kitchensink__project {
+  margin-bottom: 0.25em;
+  font-size: 1.42857em;
+}
+
+.kitchensink__toggle {
+  position: relative;
+  z-index: 3;
+}
+.kitchensink__toggle:hover {
+  background: #eeeeee;
+  color: #b31111;
+  cursor: pointer;
+}
+.kitchensink__toggle:hover .kitchensink__dropdown {
+  visibility: visible;
+}
+
+.kitchensink__dropdown {
+  position: absolute;
+  left: 0;
+  top: 4.28571em;
+  visibility: hidden;
+  width: 200px;
+  padding: 1.42857em 1.42857em 1.07143em;
+  margin: 0;
+  list-style-type: none;
+  line-height: 1.5;
+  background: #eeeeee;
+}
+.kitchensink__dropdown > li {
+  margin-bottom: 0.35714em;
+}
+.kitchensink__dropdown a {
+  color: #b31111;
+  text-decoration: none;
+}
+.kitchensink__dropdown a:hover {
+  text-decoration: underline;
+}
+
+.kitchensink__resizer {
+  float: right;
+  padding-top: 0.71429em;
+}
+.kitchensink__resizer .btn {
+  font-size: 0.85714em;
+  line-height: 3.33333em;
+  color: white;
+}
+
+.kitchensink__content {
+  position: relative;
+  z-index: 1;
+  padding-top: 5.71429em;
+  background: #ffffff;
+}
+
+.kitchensink__intro {
+  font-size: 1.14286em;
+  line-height: 1.2;
+  margin-bottom: 2em;
+}
+
+.icon {
+  position: static;
+  display: inline-block;
+  vertical-align: inherit;
+}
+
+.icon--terabyte {
+  width: 2.42857em;
+  height: 1.71429em;
+  background: url(/content/images/kitchen-sink/terabyte-icon.png) no-repeat;
+}
+
+@font-face {
+  font-family: 'font-icons';
+  src: url("/content/fonts/font-icons/fonts/font-icons.eot");
+  src: url("/content/fonts/font-icons/fonts/font-icons.eot?#iefix") format("embedded-opentype"), url("/content/fonts/font-icons/fonts/font-icons.woff") format("woff"), url("/content/fonts/font-icons/fonts/font-icons.ttf") format("truetype"), url("/content/fonts/font-icons/fonts/font-icons.svg#font-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'font-icons';
+    src: url("/content/fonts/font-icons/font-icons.svg#font-icons") format("svg");
+  }
+}
+[data-iconf]:before,
+[class*="iconf-"] {
+  font-family: 'font-icons';
+}
+
+.iconf-file:before {
+  content: "\e600";
+}
+
+.iconf-rss:before {
+  content: "\e601";
+}
+
+.iconf-youtube:before {
+  content: "\e602";
+}
+
+.iconf-pdf:before {
+  content: "\e603";
+}
+
+.iconf-doc:before {
+  content: "\e604";
+}
+
+.iconf-xls:before {
+  content: "\e605";
+}
+
+.iconf-zip:before {
+  content: "\e606";
+}
+
+.iconf-ppt:before {
+  content: "\e607";
+}
+
+.iconf-email:before {
+  content: "\e608";
+}
+
+.iconf-external:before {
+  content: "\e609";
+}
+
+.iconf-home:before {
+  content: "\e60a";
+}
+
+.iconf-search:before {
+  content: "\e60b";
+}
+
+.iconf-link:before {
+  content: "\e60c";
+}
+
+.iconf-calendar:before {
+  content: "\e60d";
+}
+
+.iconf-close:before {
+  content: "\e60e";
+}
+
+.iconf-minus:before {
+  content: "\e60f";
+}
+
+.iconf-plus:before {
+  content: "\e610";
+}
+
+.iconf-info:before {
+  content: "\e611";
+}
+
+.iconf-menu:before {
+  content: "\e612";
+}
+
+.iconf-play:before {
+  content: "\e61a";
+}
+
+.iconf-pause:before {
+  content: "\e61d";
+}
+
+.iconf-enlarge:before {
+  content: "\e613";
+}
+
+.iconf-arrow-left:before {
+  content: "\e614";
+}
+
+.iconf-arrow-down:before {
+  content: "\e615";
+}
+
+.iconf-arrow-up:before {
+  content: "\e616";
+}
+
+.iconf-arrow-right:before {
+  content: "\e617";
+}
+
+.iconf-twitter:before {
+  content: "\e61e";
+}
+
+.iconf-facebook:before {
+  content: "\e618";
+}
+
+.iconf-pinterest:before {
+  content: "\e619";
+}
+
+.iconf-linkedin:before {
+  content: "\e61b";
+}
+
+.iconf-instagram:before {
+  content: "\e61c";
+}
+
+.section-title {
+  margin-top: 2em;
+  border-bottom: 1px solid #c2c2c2;
+}
+.section-title:first-child {
+  margin-top: 0;
+}
+
+.test-arrow {
+  display: inline-block;
+  width: 7.14286em;
+  height: 7.14286em;
+  margin: 0 1.07143em 1.07143em 0;
+  padding-top: 2.85714em;
+  background-color: #9ac84b;
+  color: black;
+  text-align: center;
+}
+
+.test-arrow--top-left:before {
+  border-bottom-color: #9ac84b !important;
+}
+.test-arrow--top-left:after {
+  border-bottom-color: #9ac84b !important;
+}
+
+.test-arrow--top-right:before {
+  border-bottom-color: #9ac84b !important;
+}
+.test-arrow--top-right:after {
+  border-bottom-color: #9ac84b !important;
+}
+
+.test-arrow--top-center:before {
+  border-bottom-color: #9ac84b !important;
+}
+.test-arrow--top-center:after {
+  border-bottom-color: #9ac84b !important;
+}
+
+.test-arrow--right-top:before {
+  border-left-color: #9ac84b !important;
+}
+.test-arrow--right-top:after {
+  border-left-color: #9ac84b !important;
+}
+
+.test-arrow--right-center:before {
+  border-left-color: #9ac84b !important;
+}
+.test-arrow--right-center:after {
+  border-left-color: #9ac84b !important;
+}
+
+.test-arrow--right-bottom:before {
+  border-left-color: #9ac84b !important;
+}
+.test-arrow--right-bottom:after {
+  border-left-color: #9ac84b !important;
+}
+
+.test-arrow--bottom-left:before {
+  border-top-color: #9ac84b !important;
+}
+.test-arrow--bottom-left:after {
+  border-top-color: #9ac84b !important;
+}
+
+.test-arrow--bottom-center:before {
+  border-top-color: #9ac84b !important;
+}
+.test-arrow--bottom-center:after {
+  border-top-color: #9ac84b !important;
+}
+
+.test-arrow--bottom-right:before {
+  border-top-color: #9ac84b !important;
+}
+.test-arrow--bottom-right:after {
+  border-top-color: #9ac84b !important;
+}
+
+.test-arrow--left-top:before {
+  border-right-color: #9ac84b !important;
+}
+.test-arrow--left-top:after {
+  border-right-color: #9ac84b !important;
+}
+
+.test-arrow--left-center:before {
+  border-right-color: #9ac84b !important;
+}
+.test-arrow--left-center:after {
+  border-right-color: #9ac84b !important;
+}
+
+.test-arrow--left-bottom:before {
+  border-right-color: #9ac84b !important;
+}
+.test-arrow--left-bottom:after {
+  border-right-color: #9ac84b !important;
+}
+
+.bleed-demo {
+  background-color: #9ac84b;
+  color: black;
+}
+
+.flexbox-demo {
+  margin-bottom: 1em;
+  border: 1px solid;
+}
+
+.float-demo {
+  width: 7.14286em;
+}
+.float-demo + hr {
+  clear: both;
+}
+
+.margins-demo,
+.paddings-demo {
+  display: inline-block;
+  margin-bottom: 0.71429em;
+  background-color: orange;
+  text-align: center;
+}
+
+.margins-demo__item,
+.paddings-demo__item {
+  display: inline-block;
+  width: 7.14286em;
+  height: 7.14286em;
+  vertical-align: top;
+  background: #ace;
+}
+
+.margins-demo--full-margin {
+  margin: 20px;
+}
+
+.paddings-demo--full-padding {
+  padding: 20px;
+}
+
+.nav--tree-demo .is-selected {
+  background: #9ac84b;
+}
+.nav--tree-demo .is-selected > a {
+  color: black;
+}
+.nav--tree-demo .is-selected-parent {
+  background-color: #eee;
+}
+
+.grid-demo {
+  border: 1px solid #5c5c5c;
+}
+
+.rotator__demo {
+  max-width: 21.42857em;
+}
+
+.list--piled-demo {
+  margin: 0;
+  position: relative;
+  padding-bottom: 75%;
+}
+
+.input-combo-demo {
+  display: block;
+}

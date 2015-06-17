@@ -1,0 +1,141 @@
+
+// Line Height calculation
+// Calculates a unitless line-height (See here on why unitless line-heights are good http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/)
+// $amount: Line height to return
+// $context: By default it uses the default font-size. You can also pass it a context to avoid problems of compound font sizes.
+// $minus: By default is false. If true returns the resulting line-height as a minus number
+// Example 1: tb_line-height(20)
+// return: 1.25 depending on a root font-size of 16px
+// Example 2: tb_line-height(24, 20)
+// return: 1.2 depending on a contextual font-size of 20px
+// Example 3: tb_line-height(20, $minus: true)
+// return: -1.2 depending on a contextual font-size of 20px
+@function tb_line-height($amount: 1, $context: $base-font-size, $minus: false) {
+	@if $amount > 1 {
+		$amount: $amount/$base-line-height;
+	}
+
+	$result: tb_em($base-line-height * $amount, $context, $unitless: true);
+
+	@if $minus == true {
+		@return $result * -1;
+	} @else {
+		@return $result;
+	}
+}
+
+//Font Size calculation : ems
+// Returns an em value according to the target.
+// $target: font-size to return
+// $context: By default it uses the default font-size. You can also pass it a context to avoid problems of compound font sizes.
+// $unitless: If you want to remove the em from the result.
+// Examples
+// Example 1: tb_em(20)
+// return: 1.25em depending on a root font-size of 16px
+// Example 2: tb_em(20, 24)
+// return: 0.8333333em depending on a context font-size of 24px
+// Example 3: tb_em(20, $unitless: false)
+// returns 0.8333333
+@function tb_em($target, $context: $base-font-size, $unitless: false) {
+	@if $target == 0 { @return 0; }
+
+	//Determine whether we want line-height unitless or not
+	$result: $target / $context;
+	@if $unitless == true {
+		@return $result;
+	} @else {
+		@return $result + 0em;
+	}
+}
+
+//Font Size calculation : rems
+// Returns a rem value according to the target. $base-font-size is the font-size of the root (html) node
+// $target: font-size to return
+// Example: rem(20)
+// return: 1.25rem depending on a root font-size of 16px
+@function tb_rem( $target ) {
+	@if $target == 0 { @return 0; }
+	@return $target / $base-font-size + 0rem;
+}
+
+//Util Function for css-triangle mixin
+@function tb_setTriangleColor($direction, $side, $color) {
+	@if $direction == "left" and $side == "right"
+	or  $direction == "right" and $side == "left"
+	or $direction == "down" and $side == "top"
+	or $direction == "up" and $side == "bottom" {
+		@return $color
+	} @else {
+		@return "transparent";
+	}
+}
+
+// Returns a unitless value from a value with a unit (From https://github.com/nex3/sass/issues/533)
+// $value: value to return unitless
+// Example: tb_clear-units(10px)
+// returns 10
+@function tb_clear-units($value){
+	@if type-of($value) == "number" {
+		@if (unitless($value)) {
+			@return $value;
+		} @else if unit($value) == "em"{
+			@return $value / 1em;
+		} @else if unit($value) == "px" {
+			@return $value / 1px;
+		} @else if unit($value) == "pt" {
+			@return $value / 1pt;
+		} @else if unit($value) == "rem" {
+			@return $value / 1rem;
+		}
+	} @else {
+		@warn "Not a number value: #{$value}";
+		@return $value;
+	}
+}
+
+
+// Returns a value corresponding to a defined mediaquery
+// $value: value to return unitless
+// Example: tb_get-mediaquery-value(xl)
+// returns value set to $extra-large-start, e.g. 1200px
+// Example: tb_get-mediaquery-value(l, true)
+// returns value of end range of mediaquery e.g.$large-end 1199px
+@function tb_get-mediaquery-value($value, $getEndValue: false ){
+	@if $value == xs {
+
+		@if $getEndValue == true {
+			@return $extra-small-end;
+		}
+
+		@return $extra-small-start;
+
+	} @else if $value == s {
+
+		@if $getEndValue == true {
+			@return $small-end;
+		}
+
+		@return $small-start;
+
+	} @else if $value == m {
+
+		@if $getEndValue == true {
+			@return $medium-end;
+		}
+
+		@return $medium-start;
+
+	} @else if $value == l {
+
+		@if $getEndValue == true {
+			@return $large-end;
+		}
+
+		@return $large-start;
+
+	} @else if $value == xl {
+
+		@return $extra-large-start;
+
+	}
+}

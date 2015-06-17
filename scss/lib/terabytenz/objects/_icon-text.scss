@@ -1,0 +1,26 @@
+@if $use-terabyte-icon-text == true{
+
+/*------------------------------------*\
+    $ICON-TEXT
+\*------------------------------------*/
+/**
+ * Additional font icon styling for text which spans multiple lines.
+   <a href=# class=icon-text--multi>
+       <i class="icon-text__icon iconf--help"></i>Help &amp; support
+   </a>
+ *
+ *
+ */
+.icon-text--multi,
+.icon-text--link {
+	position: relative;
+	display: inline-block;
+	padding-left: tb_em($base-spacing-unit);
+	> .icon-text__icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+}//endif

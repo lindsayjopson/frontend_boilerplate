@@ -1,0 +1,17 @@
+$rotator-item-width: 300px!default;
+$rotator-item-height: 150px!default;
+
+.rotator__viewport{
+	position: relative;
+	padding-bottom: percentage($rotator-item-height / $rotator-item-width);
+}
+
+.rotator__content{
+	@extend .list--piled;
+}
+.rotator__item {
+	.figure {
+		width: 100%;
+		margin-bottom: 0;
+	}
+}

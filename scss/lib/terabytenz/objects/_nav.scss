@@ -1,0 +1,66 @@
+@if $use-terabyte-nav == true{
+
+/*------------------------------------*\
+	$NAV
+\*------------------------------------*/
+
+/**
+ * `.nav--tree` extends `.nav`; throws the list into vertical mode but with less margin, e.g.:
+ *
+<ul class="nav nav--tree nav-tree-demo">
+  <li>
+	<a href="#">Level 1 Item</a>
+  </li>
+  <li class="is-selected-parent"><a href="#">Level 1 Item</a>
+	<ul>
+	  <li class="is-selected">
+		<a href="#" class="nav--tree__level-2">Level 2 Item</a>
+	  </li>
+	  <li>
+		<a href="#" class="nav--tree__level-2">Level 2 Item</a>
+		<ul>
+		  <li>
+			<a href="#" class="nav--tree__level-3">Level 3 Item</a>
+		  </li>
+		</ul>
+	  </li>
+	  <li>
+		<a href="#" class="nav--tree__level-2">Level 2 Item</a>
+	  </li>
+	</ul>
+  </li>
+  <li>
+	<a href="#">Level 1 Item</a>
+  </li>
+  <li>
+	<a href="#">Level 1 Item</a>
+  </li>
+</ul>
+ */
+
+.nav--tree{
+  &,
+  ul{
+	margin-left: 0;
+	list-style: none;
+  }
+  li {
+	display: list-item;
+  }
+  a {
+	display: block;
+  }
+  // Nav Sub Levels
+  .nav--tree__level-1 {}
+  .nav--tree__level-2 {
+	padding-left: $base-spacing-unit * 2;
+  }
+  .nav--tree__level-3 {
+	padding-left: $base-spacing-unit * 3;
+  }
+  .nav--tree__level-4 {
+	padding-left: $base-spacing-unit * 4;
+  }
+}
+
+}//endif

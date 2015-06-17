@@ -1,0 +1,126 @@
+@if $use-terabyte-forms == true{
+
+
+	fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	label,
+	.label,
+	textarea {
+		cursor:pointer;
+	}
+	textarea:active,
+	textarea:focus {
+		cursor:text;
+	}
+	input[type="search"] {
+		@extend %no-round-corners;
+	}
+	// 1. Allow only vertical resizing
+	textarea {
+		resize: vertical;
+		min-height: 100px;
+	}
+	//Placeholder Text
+	::-webkit-input-placeholder {
+		color: $form__placeholder-color;
+	}
+	:-moz-placeholder {
+		color: $form__placeholder-color;
+	}
+	:-ms-input-placeholder {
+		color: $form__placeholder-color;
+	}
+	// Remove spinner from number fields in Webkit
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		// display: none; <- Crashes Chrome on hover
+		-webkit-appearance: none;
+		// Apparently some margin are still there even though it's hidden
+		margin: 0;
+	}
+
+	//BASE STYLES
+	input,
+	select,
+	textarea {
+		color: $form__input-color;
+	}
+	label,
+	.label {
+		color: $form__label-color;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"]
+	{
+		margin: tb_em(5px) tb_em(5px) 0 0;
+	}
+
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	textarea{
+		display: block;
+		width: 100%;
+	}
+
+	//validation styles
+	.field-validation-valid {
+		display: none;
+		padding: $half-spacing-unit;
+		background: $form__error-color;
+		color: $form__msg-color;
+
+		.has-error & {
+			display: block;
+		}
+	}
+
+	.valid{
+		color: $form--valid-color;
+	}
+
+	.is-valid{
+		border: 1px solid $form--valid-color;
+	}
+
+	.valid-msg{
+		display: block;
+		background: $form--valid-color;
+		color: $form__msg-color;
+	}
+
+	//===== Search Button Styles
+
+	//input-combo
+	.input-combo{
+		position: relative;
+	}
+
+	.input-combo__button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: tb_em(60px);
+		padding: tb_em(6px) tb_em(10px);
+		color: $form__input-color;
+		border: 1px solid $grey;
+	}
+
+	.input-combo__input {
+		padding: 0.3em tb_em(70px) 0.3em 0.5em;
+	}
+
+	.input-combo__input[type="search"] {
+		@extend %border-box;
+		width: 100%;
+	}
+
+}
+

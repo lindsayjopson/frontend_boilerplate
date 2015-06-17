@@ -1,0 +1,40 @@
+﻿@if $use-terabyte-tab == true{
+/*------------------------------------*\
+	$TAB
+\*------------------------------------*/
+/**
+<div class="js-tabbery tab">
+	<ul class="tab__menu">
+		<li><a href="#">Tab 1</a></li>
+		<li><a href="#">Tab 2</a></li>
+	</ul>
+	<div class="test-list--piled">
+		<ul class="tab__body">
+			<li class="is-selected">
+				<a href="#">
+					<img src="http://flickholdr.com/300/150" class="figure--full">
+				</a>
+			</li>
+			<li><a href="#">List Item</a> </li>
+		</ul>
+	</div>
+</div> */
+
+.tab {}
+.tab__menu {
+	@extend .nav;
+	@extend .nav--block;
+	@extend .flush--bottom;
+}
+.tab__body {
+	@extend .nav;
+	> li {
+		display: none;
+		.no-js &,
+		&.is-selected {
+			display: block;
+		}
+	}
+}
+		
+}

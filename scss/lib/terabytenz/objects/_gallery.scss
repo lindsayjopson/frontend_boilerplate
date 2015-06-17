@@ -1,0 +1,45 @@
+@if $use-terabyte-gallery == true{
+/*------------------------------------*\
+	$GALLERY
+\*------------------------------------*/
+/**
+
+<div class="figure figure--left gallery one-whole s-one-half js-lightbox-load js-lightbox-gallery">
+	<a href="http://placekitten.com/900/600" class="figure__container gallery__cover js-lightbox-image" title="Click to enlarge" rel="12345">
+		<img src="http://placekitten.com/600/400" alt="" />
+		<span class="iconf-zoom-in" aria-hidden="true"></span>
+	</a>
+	<ul class="grid gallery__thumbnails">
+		<li class="grid__item hidden show--l l-one-third">
+			<a href="http://placekitten.com/540/360" class="js-lightbox-image" rel="12345">
+				<img src="http://placekitten.com/900/600" alt="">
+			</a>
+		</li>
+		<li class="grid__item hidden show--l l-one-third">
+			<a href="http://placekitten.com/540/360" class="js-lightbox-image" rel="12345">
+				<img src="http://placekitten.com/900/600" alt="">
+			</a>
+		</li>
+		<li class="grid__item hidden show--l l-one-third">
+			<a href="http://placekitten.com/540/360" class="js-lightbox-image" rel="12345">
+				<img src="http://placekitten.com/900/600" alt="">
+			</a>
+		</li>
+		<li class="visuallyhidden">
+			<a href="http://placekitten.com/540/360" class="js-lightbox-image" rel="12345">Image name</a>
+		</li>
+		<li class="visuallyhidden">
+			<a href="http://placekitten.com/540/360" class="js-lightbox-image" rel="12345">Image name</a>
+		</li>
+	</ul>
+	<p class="figure__figcaption">Will span full width up to 'large' breakpoint, then go half. Default float is left.</p>
+</div>
+ */
+
+	.gallery {
+	}
+
+	.gallery__thumbnails {
+		margin-top: $base-spacing-unit;
+	}
+}

@@ -1,0 +1,92 @@
+//SITE-SPECIFIC TYPOGRAPHY
+
+// @font-face {
+// 	font-family: 'Font Name';
+// 	src: url('/fonts/font-file.25062013.eot');
+// 	src: url('/fonts/font-file.25062013.eot?#iefix') format('embedded-opentype'),
+// 		 url('/fonts/font-file.25062013.woff') format('woff'),
+// 		 url('/fonts/font-file.25062013.ttf') format('truetype'),
+// 		 url('/fonts/font-file.25062013.svg#PermanentMarkerRegular') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+html {
+	font-family: $base-font-family;
+}
+
+.wf-loading {
+	.heading,
+	#{headers()} {
+		visibility: hidden;
+	}
+}
+
+.heading,
+#{headers()}{
+	font-family: $headings-font-family;
+	color: $headings-color;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+// .heading--ornamental {
+// 	font-family: $ornamental-font-family;
+// 	.wf-loading {
+// 		visibility: visible;
+// 	}
+// }
+
+//Heading Margins
+h1 {
+	margin-bottom: tb_em(20px, $h1-size)
+}
+h2 {
+	margin-bottom: tb_em(12px, $h2-size)
+}
+h3 {
+	margin-bottom: tb_em(12px, $h3-size)
+}
+h4 {
+	margin-bottom: tb_em(12px, $h4-size)
+}
+h5 {
+	margin-bottom: tb_em(12px, $h5-size)
+}
+h6 {
+	margin-bottom: tb_em(12px, $h6-size)
+}
+
+.text--brand {
+}
+
+//Lede
+.lede {
+}
+
+//Paragraph
+p {
+	margin-bottom: tb_em(15px, $h6-size);
+}
+//Positioning Statement
+.text--positioning {
+}
+
+//Links
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+//Blockquote
+blockquote {
+	> p {
+	}
+	cite {
+	}
+}
+//Horizontal Rule
+hr {
+}

@@ -1,0 +1,13 @@
+@if $use-terabyte-pagination == true{
+/*------------------------------------*\
+    $PAGINATION
+\*------------------------------------*/
+.pagination > li{
+	padding:tb_em($base-spacing-unit / 2);
+}
+.pagination > li > a{
+	padding:tb_em($base-spacing-unit / 2);
+	margin:-#{tb_em($base-spacing-unit / 2)};
+}
+}//endif
+

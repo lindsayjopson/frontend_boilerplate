@@ -1,0 +1,20 @@
+﻿@if $use-terabyte-beautons == true{
+
+/*------------------------------------*\
+	$BEAUTONS.CSS
+\*------------------------------------*/
+
+/*------------------------------------*\
+	$STYLES
+\*------------------------------------*/
+/**
+ * Button style modifiers.
+ *
+ */
+.btn--round{
+	@include tb_circle( 3em );
+	padding: 0;
+	text-align: center;
+}
+
+}//endif

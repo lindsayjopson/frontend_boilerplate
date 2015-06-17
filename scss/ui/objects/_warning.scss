@@ -1,0 +1,16 @@
+.warning {
+	@extend %error-gradient;
+	width: 100%;
+	.oldie & {
+		@extend %error-gradient-oldie;
+	}
+	a {
+		color: $warning__link-color;
+	}
+}
+.warning-body {
+	margin: auto;
+	padding: 10px 0;
+	color: $warning-color;
+	text-align: center;
+}

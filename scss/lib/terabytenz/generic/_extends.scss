@@ -1,0 +1,69 @@
+// WARNING!!!!
+// THESE CLASSES ARE USED FOR INHERITANCE WITH THE @EXTEND DIRECTION. BE CAREFUL WHEN ALTERING AS THEY MAY CAUSE UNWANTED CHANGES IN OTHER PARTS OF THE CODE
+
+%pseudo-element {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+//BORDER BOX BOX SIZING
+%border-box {
+	@include box-sizing("border-box");
+}
+%content-box {
+	@include box-sizing("content-box");
+}
+
+//GRADIENTS
+%error-gradient {
+	@include background-with-css2-fallback(linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%));
+}
+%error-gradient-oldie {
+	@include filter-gradient(#a90329, #6d0019, vertical);
+}
+%no-gradient {
+	background-image: none;
+	filter: none;
+}
+
+//BORDER RADIUS
+%all-corners-3px {
+	@include border-radius(3px);
+}
+%all-corners-5px {
+	@include border-radius(5px);
+}
+%no-round-corners {
+	@include border-radius(0);
+}
+
+//TRANSITIONS USING CEASER
+/* @mixin ceaser-transition(transition property, duration, ease type, delay) */
+
+%hover-image-transition {
+	@include ceaser-transition(all, 0.3s, $easeOutExpo);
+}
+%hover-image-transition-reverse {
+	@include ceaser-transition(all, 0s, $easeInOutExpo, 0);
+}
+%hover-transition-button {
+	@include transition((background-color 0.5s ceaser($easeOutQuint) 0s, width 0.5s ceaser($easeOutExpo) 0s, height 0.5s ceaser($easeOutExpo) 0s, top 0.5s ceaser($easeOutQuint) 0s));
+}
+%transform-transition {
+	@include transition(transform 0.5s ceaser($easeOutExpo));
+}
+
+//BOX SHADOW
+%box-shadow {
+	@include box-shadow( 1px 1px 40px 5px rgba(0, 0, 0, 0.3));
+}
+%box-shadow-bottom {
+	@include box-shadow( 0px 3px 2px 0px rgba(0, 0, 0, 0.3));
+}
+%box-shadow-left {
+	@include box-shadow( -5px 0px 20px rgba(50, 50, 50, 0.75) );
+}
+%box-shadow-right {
+	@include box-shadow( 5px 0px 20px rgba(50, 50, 50, 0.75) );
+}

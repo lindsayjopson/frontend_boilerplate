@@ -1,0 +1,135 @@
+/*------------------------------------*\
+    $THEME
+\*------------------------------------*/
+
+/**
+ * Colour Swatch
+ */
+$white: #ffffff;
+$black: #000000;
+$charcoal: #231f20;
+$grey: #646464;
+$grey--dark: #3e3e3e;
+$grey--darker: #c2c2c2;
+$grey--light: #efefef;
+$red: #ef4236;
+$pink: #fad7d7;
+$blue: #00bce4;
+$blue--light: #add8c6;
+$yellow: #fce42c;
+$yellow--dull: #f5c020;
+$purple: #a66197;
+$green: #9ac84b;
+$gold: #c3a57f;
+
+//--- Fonts
+//Font Familys
+$font-family-sans: Arial, Verdana, sans-serif;
+$font-family-brand: 'TradeGothicW01-BoldCn20 675334', Arial, Verdana, sans-serif;
+$font-family-serif: 'PermanentMarkerRegular', Georgia, Times New Roman, serif;
+$font-family-mono: Monaco, Menlo, Consolas, "Courier New", monospace;
+//Font styles
+$base-ui-color:     $grey--darker;
+$base-font-size:    14px;
+$base-line-height:  17px;
+$base-font-family: $font-family-sans;
+$headings-font-family: $font-family-brand;
+$headings-color: $black;
+$positioning-color: $grey;
+$ornamental-font-family: $font-family-serif;
+$code-font-family: $font-family-mono;
+
+/*-------------------------------------*\
+	$MODULE COLOURS -
+	NOTE: Variables use BEM style and should use the following convention:
+	$module__subitem--modifier-property. Examples:
+	$lightbox__overlay-background
+	$button--active-color
+\*------------------------------------*/
+
+//--- Scaffolding
+$body-color: $grey;
+$body-bg: $white;
+
+//--- Selection Text
+$selection-bg: $blue;
+$selection-color: $white;
+
+//Lede Colour
+$lede-color: $grey;
+
+//--- Links
+$link-color: $blue;
+$link--visited-color: $blue;
+$link--hover-color: $blue;
+$link--active-color: $blue;
+
+//--- Buttons
+$button-bg: $charcoal;
+$button-color: $white;
+$button--hover-bg: $blue;
+$button--hover-color: $white;
+$button--positive-bg: $green;
+$button--positive-color: $green;
+$button--negative-bg: $red;
+$button--negative-color: $white;
+$button--inactive-bg: $grey;
+$button--inactive-color: $black;
+
+//--- Blockquote
+$blockquote-color: $green;
+$blockquote__cite-color: $grey;
+
+//--- Icons
+//Icons
+$iconf-size: 1em!default;
+$iconf-color: $blue;
+$iconf--hover-color: $black;
+$iconf--light-color: $white;
+$iconf--hover-light-color: $blue;
+
+//--- Forms
+$form__label-color: $black;
+$form__input-color: $grey;
+$form__placeholder-color: $grey;
+$form__msg-color: $white;
+$form--error-color: $red;
+$form--valid-color: $green;
+
+//-- Accordion
+$accordion__header-bg: $black!default;
+$accordion__header-color: $white!default;
+
+//-- Figure
+$figure__icon-color: $white;
+$figure__icon-bg: $blue;
+$figure__figcaption-color: $grey;
+$figure__figcaption-border: $grey;
+
+//-- Lightbox
+$lightbox-bg: $white!default;
+$lightbox__overlay-bg: $white!default;
+$lightbox__button-bg: $white!default;
+$lightbox__button--hover-bg: $grey!default;
+$lightbox__icon-color: $black!default;
+$lightbox__icon--hover-color: $white!default;
+$lightbox__current-color: $black!default;
+$lightbox__border-color: $black!default;
+
+//-- Megamenu
+$megamenu--large: 640px!default;
+$megamenu--small-bg: $grey;
+$megamenu--large-bg: transparent;
+$megamenu-border: $grey;
+$megamenu__heading-bg: $white;
+$megamenu__heading--expanded-bg: $grey;
+$megamenu__heading-color: $base-ui-color;
+$megamenu__dropdown-bg: $grey!default;
+
+$megamenu__expander-color: $base-ui-color;
+$megamenu__control-item-bg: $white;
+$megamenu__control-item-color: $base-ui-color;
+
+//-- Warning
+$warning-color: $white;
+$warning__link-color: $gold;

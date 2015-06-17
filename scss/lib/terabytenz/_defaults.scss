@@ -1,0 +1,203 @@
+/*------------------------------------*\
+	$TERABYTE INUIT.CSS FRAMEWORK VARIABLES
+\*------------------------------------*/
+/**
+ * At Terabyte we maintain our own Inuit.css-esque components. Similar to Inuit.css we set our overrides here
+ */
+
+
+/*------------------------------------*\
+	$IMPORTS
+\*------------------------------------*/
+/**
+ * Colour assignment for base styles
+ */
+//IMPORTS
+
+
+//Settings
+$experimental-support-for-svg: true;
+$rgbapng_path: 'interface/bg';
+$breakpoint-to-ems: true;
+
+/*------------------------------------*\
+	$COLOUR THEME
+\*------------------------------------*/
+/**
+ * Colour assignment for base styles
+ */
+$white: #ffffff!default;
+$black: #000!default;
+$blue: #3f89c1!default;
+$sky-blue: #4a8ec2!default;
+$red: #ff0000!default;
+$grey: #ccc!default;
+$gold: #c3a57f!default;
+$green: #089e00!default;
+
+/*-------------------------------------*\
+	$MODULE COLOURS -
+	NOTE: Variables use BEM style and should use the following convention:
+	$module__subitem--modifier-property. Examples:
+	$lightbox__overlay-background
+	$button--active-color
+\*------------------------------------*/
+//--- Scaffolding
+$body-color: $black!default;
+$body-bg: $white!default;
+
+//--- Selection Text
+$selection-bg: $red!default;
+$selection-color: $white!default;
+
+//--- Links
+$link-color: $blue!default;
+$link--visited-color: $blue!default;
+$link--hover-color: $blue!default;
+$link--active-color: $blue!default;
+
+//--- Forms
+$form__label-color: $black!default;
+$form__input-color: $grey!default;
+$form__placeholder-color: $grey!default;
+$form__msg-color: $white!default;
+$form--error-color: $red!default;
+$form--valid-color: $green!default;
+
+//-- Accordion
+$accordion__header-bg: $black!default;
+$accordion__header-color: $white!default;
+
+//-- Figure
+$figure__icon-color: $white!default;
+
+//-- Lightbox
+$lightbox-background: $white!default;
+$lightbox__overlay-background: $white!default;
+$lightbox__button-background: $white!default;
+$lightbox__button--hover-background: $grey!default;
+$lightbox__icon-color: $black!default;
+$lightbox__icon--hover-color: $white!default;
+$lightbox__current-color: $black!default;
+$lightbox__border-color: $black!default;
+
+//Megamenu
+$megamenu--large: 640px!default;
+$megamenu__dropdown-background: $grey!default;
+$megamenu__icon-color: $black!default;
+
+//Icons
+$iconf-color: $black!default;
+$iconf-size: 1em!default;
+
+/*------------------------------------*\
+	$RESPONSIVE
+\*------------------------------------*/
+/**
+ * Responsiveness?
+ */
+$terabyte-side-gutter: $base-font-size!default;
+$terabyte-max-width: 1130px!default;
+$terabyte-max-width-full: $terabyte-max-width + 2*$terabyte-side-gutter!default;
+$terabyte-ie-max-width: 1024px!default;
+$terabyte-ie-max-width-full: $terabyte-ie-max-width + 2*$terabyte-side-gutter!default;
+$terabyte-responsive:        true!default;
+
+/**
+ * Responsiveness for widescreen/high resolution desktop monitors and beyond?
+ * Note: `$terabyte-responsive` variable above must be set to true before enabling this.
+ */
+$terabyte-responsive-extra:  true!default;
+
+/**
+ * Responsive push and pull produce a LOT of code, only turn them on if you
+ * definitely need them.
+ */
+$terabyte-push:              true!default;
+/**
+ * Note: `$terabyte-push` variable above must be set to true before enabling these.
+ */
+$extra-small-push:     true!default;
+$small-push:           true!default;
+$medium-push:          true!default;
+$large-push:           true!default;
+$extra-large-push:     true!default;
+
+$terabyte-pull:        true!default;
+
+/**
+ * Note: `$terabyte-pull` variable above must be set to true before enabling these.
+ */
+$extra-small-pull:   true!default;
+$small-pull:         true!default;
+$medium-pull:        true!default;
+$large-pull:         true!default;
+$extra-large-pull:   true!default;
+
+/**
+ * Tell terabytenz.css when breakpoints start and end.
+ */
+$extra-small-start:  0!default;
+$extra-small-end:    479px!default;
+$small-start:        ($extra-small-end + 1px)!default;
+$small-end:          767px!default;
+$medium-start:       ($small-end + 1px)!default;
+$medium-end:         1023px!default;
+$large-start:        ($medium-end + 1px)!default;
+$large-end:          1199px!default;
+$extra-large-start:  ($large-end + 1px)!default;
+
+/*------------------------------------*\
+	$FONT-SIZES
+\*------------------------------------*/
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+$giga-line-height:         144px!default;
+$mega-line-height:         108px!default;
+$kilo-line-height:         72px!default;
+
+$h1-line-height:           54px!default; // .alpha
+$h2-line-height:           45px!default; // .beta
+$h3-line-height:           36px!default; // .gamma
+$h4-line-height:           30px!default; // .delta
+$h5-line-height:           24px!default; // .epsilon
+$h6-line-height:           21px!default; // .zeta
+
+$milli-line-height:        18px!default;
+$micro-line-height:        15px!default;
+
+
+
+/*------------------------------------*\
+	$TERABYTE OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+$use-terabyte-beautons:      true!default;
+$use-terabyte-block-list:    true!default;
+$use-terabyte-accordion:     true!default;
+$use-terabyte-figure:        true!default;
+$use-terabyte-forms:         true!default;
+$use-terabyte-gallery:       true!default;
+$use-terabyte-grids:         true!default;
+$use-terabyte-icon-text:     true!default;
+$use-terabyte-icon-font:     true!default;
+$use-terabyte-lightbox:      true!default;
+$use-terabyte-list:          true!default;
+$use-terabyte-megamenu:      true!default;
+$use-terabyte-nav:           true!default;
+$use-terabyte-pagination:    true!default;
+$use-terabyte-tab:           true!default;
+
+
+/*------------------------------------*\
+	$FRAMEWORK
+\*------------------------------------*/
+/**
+ * inuit.css will work these next ones out for use within the framework.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+$quarter-spacing-unit: ($base-spacing-unit / 4)!default;

@@ -1,0 +1,53 @@
+﻿.tablescroll {
+	position: relative;
+	overflow: hidden;
+	clear: both;
+	margin-bottom: tb_em(25px);
+	table {
+		margin-bottom: 0;
+	}
+	&:before,
+	&:after {
+		@extend %pseudo-element;
+		top: 0;
+		width: 1%;
+		height: 100%;
+		display: none;
+	}
+	&.is-scrolling {
+		&:before,
+		&:after {
+			display: block;
+		}
+	}
+	&:before {
+		@extend %box-shadow-right;
+		left: -1%;
+	}
+	&:after {
+		@extend %box-shadow-left;
+		right: -1%;
+	}
+	&.is-end {
+		&:after {
+			display: none;
+		}
+	}
+	&.is-start {
+		&:before {
+			display: none;
+		}
+	}
+	&.is-end {
+		&:after {
+			display: none;
+		}
+	}
+	.tablescroll-inner {
+		width: 100%;
+	}
+	&.is-scrolling .tablescroll-inner {
+		overflow-x: scroll;
+	}
+	
+}

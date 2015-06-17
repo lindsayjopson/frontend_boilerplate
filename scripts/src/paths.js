@@ -1,0 +1,35 @@
+﻿requirejs.config( {
+	paths: {
+	//Project Paths
+		app: '../app',
+		util: '../util',
+		//Terabyte Libs
+		brotator: 'terabyte/jquery.brotator',
+		evensteven: 'terabyte/jquery.evensteven',
+		expandcollapse: 'terabyte/jquery.expandcollapse',
+		phatfingaz: 'terabyte/jquery.phatfingaz',
+		placeholdit: 'terabyte/jquery.placeholdit',
+		tabbery: 'terabyte/jquery.tabbery',
+		tablescroll: 'terabyte/jquery.tablescroll',
+		lazyscroll: 'terabyte/jquery.lazyscroll',
+		//3rd Party Libs
+		async: 'requirejs-plugins/async',
+		magnificPopup: 'jquery.magnific-popup',
+		easing: 'jquery.easing.1.3',
+		feature: 'requirejs-plugins/feature',
+		goog: 'requirejs-plugins/goog',
+		hoverIntent: 'jquery.hoverIntent',
+		implementations: 'requirejs-plugins/amd-feature/dynamic',
+		jquery: 'jquery-1.10.2',
+		jquerymigrate: 'jquery-migrate-1.2.1.min',
+		unobtrusiveAjax: 'jquery.unobtrusive-ajax.min',
+		lazyload: 'jquery.lazyload.1.8.2',
+		propertyParser: 'requirejs-plugins/propertyParser',
+		pubsub: 'jquery.ba-tinypubsub',
+		throttledebounce: 'jquery.ba-throttle-debounce.min',
+		imagesloaded: 'imagesloaded/imagesloaded',
+		'socket-io': '/socket.io/socket.io',
+		enquire: 'enquire.1.6',
+		actual: 'jquery.actual'
+	}
+} );

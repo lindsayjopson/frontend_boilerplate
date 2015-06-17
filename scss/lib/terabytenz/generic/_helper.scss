@@ -1,0 +1,89 @@
+// For image replacement
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	// IE 6/7 fallback
+	*text-indent: -9999px;
+}
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+}
+// Hide from both screenreaders and browsers: h5bp.com/u
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+@if $terabyte-responsive{
+
+	@each $state in xs, s, m, l, xl{
+
+		$mediaquery: tb_get-mediaquery-value($state);
+		$mediaquery-end: tb_get-mediaquery-value($state, true);
+		@if $state != xs {
+			@include breakpoint($mediaquery, $no-query: true){
+				.hidden--#{$state}{
+					display: none !important;
+					visibility: hidden !important;
+				}
+			}
+		}
+
+		@include breakpoint($mediaquery, $no-query: true){
+			.show--#{$state}{
+				display: block!important;
+				visibility: visible!important;
+			}
+		}
+		
+		@if $state != xl {
+			@include breakpoint($mediaquery $mediaquery-end, $no-query: true){
+				.show--#{$state}-only {
+					display: block!important;
+					visibility: visible!important;
+				}
+				.hidden--#{$state}-only {
+					display: none !important;
+					visibility: hidden;
+				}
+			}
+		}
+
+	}
+}
+
+//Helper classes
+.clear 					{ clear: both !important; }
+.nowrap 				{ white-space: nowrap !important; }
+.hot					{ cursor:pointer !important; }
+.strike					{ text-decoration: line-through !important; }
+.normal					{ font-weight:normal !important; }
+.list-no-style			{ list-style: none !important; }
+
+// JS helpers
+.js-hidden {
+	display: none;
+	.no-js & {
+		display: block;
+	}
+}
+.js-invisible {
+	visibility: hidden;
+	.no-js & {
+		visibility: visible;
+	}
+}

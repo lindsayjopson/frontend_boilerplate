@@ -1,0 +1,36 @@
+@if $use-terabyte-list == true {
+/*------------------------------------*\
+	$FIGURE
+\*------------------------------------*/
+/**
+ * `.Figure` are image containers which may or may not have a caption
+
+<ul class="list--piled">
+	<li class="is-selected">
+		<img src="http://placehold.it/500x300&amp;text=Placeholder" alt=">
+	</li>
+	<li>
+		<a href="http://placehold.it/500x300&amp;text=Placeholder" title=""></a>
+	</li>
+	<li>
+		<a href="http://placehold.it/500x300&amp;text=Placeholder" title=""></a>
+	</li>
+</ul>
+ */
+
+	.list--piled{
+		position: relative;
+		margin: 0;
+		> li{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			width: 100%;
+
+			&.is-selected{
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $SMALLPRINT
+\*------------------------------------*/
+/**
+ * A series of classes for setting tiny type; for use in smallprint etc.
+ */
+.smallprint,
+.milli{
+	@include tb_font-size( $milli-size, $milli-line-height );
+}
+.micro{
+	@include tb_font-size( $micro-size, $micro-line-height );
+}

@@ -1,0 +1,17 @@
+/*------------------------------------*\
+	$MAIN
+\*------------------------------------*/
+body {
+	color: $body-color;
+	background-color: $body-bg;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: tb_em( $terabyte-max-width + 2 * $base-spacing-unit );
+	padding: 0 tb_em( $base-spacing-unit );
+	.oldie & {
+		min-width: tb_em($terabyte-ie-max-width + 2 * $base-spacing-unit);
+		max-width: tb_em($terabyte-ie-max-width + 2 * $base-spacing-unit);
+	}
+}

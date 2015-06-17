@@ -1,0 +1,179 @@
+﻿@if $use-terabyte-lightbox == true{
+
+////============= COLORBOX
+///*
+//	ColorBox Core Style:
+//	The following CSS is consistent between example themes and should not be altered.
+#colorbox, #cboxOverlay, #cboxWrapper {position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay {position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft {clear:left;}
+#cboxContent {position:relative;}
+#cboxLoadedContent {overflow:auto;}
+#cboxTitle {margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic {position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {cursor:pointer;}
+.cboxPhoto {float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe {width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent {box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+// CUSTOM STYLES
+#cboxOverlay {
+	background: $lightbox__overlay-background;
+}
+#colorbox {
+	@extend %box-shadow;
+	padding: tb_em(10px);
+	background: $lightbox-background;
+	.no-boxshadow & {
+		border: 1px solid $lightbox__border-color;
+	}
+}
+#cboxWrapper {
+	left: tb_em(10px);
+	//padding-bottom: tb_em(50px);
+}
+#cboxContent {
+	overflow: visible;
+	padding-top: tb_em(10px);
+	padding-bottom: tb_em(20px);
+}
+#cboxLoadedContent {
+	padding-bottom: tb_em(20px);
+}
+.cboxIframe {
+	background: $lightbox-background;
+}
+#cboxError {
+	padding: tb_em(50px); 
+	border:1px solid #ccc;
+}
+#cboxLoadingGraphic {
+	//background:image-url('interface/ind/loading.gif') no-repeat center center;
+}
+#cboxLoadingOverlay {
+	background: $lightbox-background;
+}
+#cboxTitle,
+#cboxCurrent {
+	@include tb_font-type('epsilon');
+	@extend %border-box;
+	float: right !important;
+}
+#cboxTitle {
+	display: block !important;
+	width: 80%;
+	//hack to always get #cboxTitle to show
+	min-height: 1px;
+	padding: 0 2em 0 1em;
+	border-left: 1px solid $lightbox__current-color;
+}
+#cboxCurrent {
+	width: 20%;
+	padding-right: 1em;
+	text-align: right;
+	color: $lightbox__current-color;
+	&[style*="display"][style*="block"] {
+		~ #cboxDescription {
+			padding-right: 160px;
+		}
+	}
+}
+#cboxSlideshow, 
+#cboxPrevious,
+#cboxNext, 
+#cboxClose {
+	position:absolute; 
+	text-indent:-9999px; 
+}
+#cboxNext,
+#cboxPrevious,
+#cboxClose {
+	display: none !important;
+}
+#colorbox {
+	.cboxBtnViewport {
+		overflow: hidden;
+		height: tb_em(100px, 12px);
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	.btn-next,
+	.btn-previous,
+	.btn-close {
+		background-color: $lightbox__button-background;
+		color: $lightbox__icon-color;
+		&:hover {
+			background-color: $lightbox__button--hover-background;
+			color: $lightbox__icon--hover-color;
+		}
+	}
+	.btn-next,
+	.btn-previous {
+		@extend %hover-transition-button;
+		//max-width: 20%;
+		position:absolute;
+		top: 40%;
+		width: tb_em(70px, 12px);
+		height: tb_em(48px, 12px);
+		padding: 0;
+		[class*="iconf-"] {
+			font-size: tb_em(28px, 12px);
+			position: absolute;
+			top: tb_em(11px, 28px);
+		}
+		.cboxBtnViewport {
+			@extend %hover-image-transition-reverse;
+			position: absolute;
+			top: tb_em(10px);
+			width: percentage(150/224);
+		}
+		&:hover {
+			top: 35%;
+			width: tb_em(224px, 12px);
+			height: tb_em(116px, 12px);
+			[class*="iconf-"] {
+				top: tb_em(45px, 28px);
+			}
+			.cboxBtnViewport {
+				@extend %hover-image-transition;
+				right: tb_em(47px, 12px);
+			}
+		}
+	}
+	.btn-next {
+		right:0;
+		[class*="iconf-"] {
+			right: tb_em(17px, 28px);
+		}
+		.cboxBtnViewport {
+			right: -100%;
+		}
+		&:hover {
+			.cboxBtnViewport {
+				right: percentage(60/224);
+			}
+		}
+	}
+	.btn-previous {
+		left:0;
+		[class*="iconf-"] {
+			left: tb_em(17px, 28px);
+		}
+		.cboxBtnViewport {
+			left: -100%;
+		}
+		&:hover {
+			.cboxBtnViewport {
+				left: percentage(60/224);
+			}
+		}
+	}
+}
+.btn-close {
+	position: absolute;
+	top: tb_em(10px, 12px);
+	right: 0;
+}
+}

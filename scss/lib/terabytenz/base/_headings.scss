@@ -1,0 +1,46 @@
+/*------------------------------------*\
+	$HEADINGS
+\*------------------------------------*/
+/**
+ * Vertical rhythm calculator - http://drewish.com/tools/vertical-rhythm
+ * NATO Phonetic Alphabet - http://benjamin.org/dan/nato.html
+ *
+ */
+h1,
+.alpha {
+	@include tb_font-size( $h1-size, $h1-line-height );
+}
+h2,
+.beta {
+	@include tb_font-size( $h2-size, $h2-line-height );
+}
+h3,
+.gamma {
+	@include tb_font-size( $h3-size, $h3-line-height );
+}
+h4,
+.delta {
+	@include tb_font-size( $h4-size, $h4-line-height );
+}
+h5,
+.epsilon {
+	@include tb_font-size( $h5-size, $h5-line-height );
+}
+h6,
+.zeta {
+	@include tb_font-size( $h6-size, $h6-line-height );
+}
+
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+.giga {
+	@include tb_font-size( $giga-size, $giga-line-height );
+}
+.mega {
+	@include tb_font-size( $mega-size, $mega-line-height );
+}
+.kilo {
+	@include tb_font-size( $kilo-size, $kilo-line-height );
+}

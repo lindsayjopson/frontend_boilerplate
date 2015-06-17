@@ -1,0 +1,56 @@
+﻿@if $use-terabyte-accordion == true{
+/*------------------------------------*\
+	$ACCORDION
+\*------------------------------------*/
+/**
+
+<a href="#" class="is-collapsed"><span>Open all</span></a>
+<ul class="accordion">
+	<li class="is-collapsed">
+		<h2 class="accordion__header">Accordian List Item</h5>
+		<div class="accordion__body">
+			<p>Bacon ipsum dolor pork chop.</p>
+			<img src="http://placehold.it/500x300&amp;text=Expander" />
+		</div>
+	</li>
+	<li class="is-collapsed">
+		<h2 class="accordion__header">Accordian List Item</h5>
+		<div class="accordion__body">
+			<p>Bacon ipsum dolor pork chop.</p>
+		</div>
+	</li>
+</ul>
+ */
+
+	.accordion {
+		@extend .nav;
+		@extend .nav--stacked;
+	}
+
+	.accordion__header {
+		position: relative;
+		margin-bottom: 0;
+		padding: $half-spacing-unit;
+		background-color: $accordion__header-bg;
+		color: $accordion__header-color;
+		cursor: pointer;
+		&:before {
+			@extend %pseudo-element;
+			position: absolute;
+			right: $half-spacing-unit;
+			top: $half-spacing-unit;
+			content: '+';
+			.is-expanded & {
+				content: '-';
+			}
+		}
+	}
+
+	.accordion__body {
+		display: none;
+		padding: $base-spacing-unit 0;
+		.is-expanded & {
+			display: block;
+		}
+	}
+}

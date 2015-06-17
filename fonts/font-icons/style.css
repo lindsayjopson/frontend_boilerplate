@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'font-icons';
+	src:url('fonts/font-icons.eot?-yqkh8v');
+	src:url('fonts/font-icons.eot?#iefix-yqkh8v') format('embedded-opentype'),
+		url('fonts/font-icons.woff?-yqkh8v') format('woff'),
+		url('fonts/font-icons.ttf?-yqkh8v') format('truetype'),
+		url('fonts/font-icons.svg?-yqkh8v#font-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="iconf-"], [class*=" iconf-"] {
+	font-family: 'font-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.iconf-file:before {
+	content: "\e600";
+}
+.iconf-rss:before {
+	content: "\e601";
+}
+.iconf-youtube:before {
+	content: "\e602";
+}
+.iconf-pdf:before {
+	content: "\e603";
+}
+.iconf-doc:before {
+	content: "\e604";
+}
+.iconf-xls:before {
+	content: "\e605";
+}
+.iconf-zip:before {
+	content: "\e606";
+}
+.iconf-ppt:before {
+	content: "\e607";
+}
+.iconf-email:before {
+	content: "\e608";
+}
+.iconf-external:before {
+	content: "\e609";
+}
+.iconf-home:before {
+	content: "\e60a";
+}
+.iconf-search:before {
+	content: "\e60b";
+}
+.iconf-link:before {
+	content: "\e60c";
+}
+.iconf-calendar:before {
+	content: "\e60d";
+}
+.iconf-close:before {
+	content: "\e60e";
+}
+.iconf-minus:before {
+	content: "\e60f";
+}
+.iconf-plus:before {
+	content: "\e610";
+}
+.iconf-info:before {
+	content: "\e611";
+}
+.iconf-menu:before {
+	content: "\e612";
+}
+.iconf-play:before {
+	content: "\e61a";
+}
+.iconf-pause:before {
+	content: "\e61d";
+}
+.iconf-enlarge:before {
+	content: "\e613";
+}
+.iconf-arrow-left:before {
+	content: "\e614";
+}
+.iconf-arrow-down:before {
+	content: "\e615";
+}
+.iconf-arrow-up:before {
+	content: "\e616";
+}
+.iconf-arrow-right:before {
+	content: "\e617";
+}
+.iconf-twitter:before {
+	content: "\e61e";
+}
+.iconf-facebook:before {
+	content: "\e618";
+}
+.iconf-pinterest:before {
+	content: "\e619";
+}
+.iconf-linkedin:before {
+	content: "\e61b";
+}
+.iconf-instagram:before {
+	content: "\e61c";
+}

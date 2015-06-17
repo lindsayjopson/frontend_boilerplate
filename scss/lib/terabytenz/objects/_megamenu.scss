@@ -1,0 +1,213 @@
+@if $use-terabyte-megamenu == true{
+
+/*------------------------------------*\
+	$MEGAMENU
+\*------------------------------------*/
+/**
+	Megamenu control which goes from megamenu stacked (< `$megamenu-large`) to
+	regular `nav--fit` with megamenu dropdown
+
+	`.is-expanded` on `.megamenu__item` expands section navigation.
+ *
+<div class="wrapper">
+	<ul class="megamenu__controls nav">
+		<li>
+			<a class="megamenu__control-item iconf iconf--search">
+				<span class="visuallyhidden">Search</span>
+			</a>
+		</li>
+		<li>
+			<a class="megamenu__control-item icon icon--home">
+				<span class="visuallyhidden">Menu</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="wrapper">
+	<ul class="megamenu" role="navigation">
+		<li class="megamenu__item is-expanded">
+			<a class="megamenu__heading--dropdown" href="#">List Item</a>
+			<span class="megamenu__control-item--expander"></span>
+			<div class="megamenu__dropdown">
+				<ul class="megamenu__list">
+					<li class="one-quarter">
+						<a href="#">List Item</a>
+					</li>
+					<li class="one-quarter"><a href="#">List Item</a> </li>
+					<li class="one-quarter"><a href="#">List Item</a> </li>
+					<li class="one-quarter"><a href="#">List Item</a> </li>
+					<li class="one-quarter"><a href="#">List Item</a> </li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+ */
+
+.megamenu {
+	@extend .block-list;
+	@extend .cf;
+	position: relative;
+	display: none;
+	&.is-expanded {
+		display: block;
+		border-bottom: 0;
+	}
+	>li{
+		padding: $half-spacing-unit 0;
+	}
+}
+
+.megamenu__search {
+	display: none;
+	&.is-expanded {
+		display: block;
+	}
+}
+
+.megamenu__list{
+	@extend .nav;
+	@extend .nav--stacked;
+	margin-bottom: 0;
+}
+
+.megamenu__heading{
+	display: inline-block;
+	&.is-expanded{
+		margin-bottom: $half-spacing-unit;
+	}
+
+}
+.megamenu__item{
+	position: relative;
+}
+
+.megamenu__dropdown {
+	@extend %box-shadow-bottom;
+	display: none;
+	.megamenu__item.is-expanded & {
+		display: block;
+	}
+}
+
+// Menu Controls e.g. Menu button, Search and Section Nav expand/collapse
+.megamenu__controls {
+	> li{
+		vertical-align: top;
+	}
+}
+
+[class*="megamenu__control-item"] {
+	@include tb_square(tb_em(35px));
+	display: block;
+	cursor: pointer;
+	color: $megamenu__control-item-color;
+	background: $megamenu__control-item-bg;
+}
+
+.megamenu__control-item--expander{
+	position: absolute;
+	top: 0;
+	right: 0;
+	.megamenu__item.is-collapsed &:before,
+	&:before {
+		display: block;
+		content: '+';
+		color: $megamenu__control-item-color;
+		font-size: tb_em(35px);
+		text-align: right;
+		line-height: 1;
+	}
+	.megamenu__item.is-expanded &:before {
+		content: '-';
+	}
+}
+.megamenu__control-item--nav {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 25px;
+		height: 25px;
+		border-top: 15px double $megamenu__control-item-color;
+		border-bottom: 5px solid $megamenu__control-item-color;
+	}
+}
+
+@include breakpoint($megamenu--large, $no-query: true){
+
+	.megamenu {
+		display: block;
+		position: relative;
+		width:100%;
+		margin-bottom: 0;
+		> li {
+			display: block;
+			float: left;
+			padding: 0;
+			> a {
+				display:block;
+				text-align: center;
+			}
+		}
+	}
+
+	.megamenu__search {
+		display: block;
+	}
+
+	.megamenu__heading {
+		display: block;
+	}
+
+	.megamenu__heading--dropdown{
+		position: relative;
+		&:after{
+			@include tb_css-triangle($direction: 'down', $size: tb_em(5px, 16px), $color: $megamenu__icon-color);
+			display: inline-block;
+			margin-left: tb_em(5px, $base-font-size);
+			vertical-align: middle;
+			content: '';
+		}
+	}
+
+	.megamenu__dropdown{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 2;
+		visibility: hidden;
+		display: block;
+		width: 100%;
+		padding: $half-spacing-unit;
+		background: $megamenu__dropdown-background;
+
+		.is-expanded &{
+			visibility: visible;
+		}
+	}
+
+	.megamenu__list {
+		> li {
+			display: block;
+			float: left;
+		}
+	}
+
+	.megamenu__item {
+		position: static;
+	}
+
+	.megamenu__controls,
+	.megamenu__control-item {
+		display: none;
+	}
+
+	.search-form{
+		display: block;
+	}
+}
+
+}//endif

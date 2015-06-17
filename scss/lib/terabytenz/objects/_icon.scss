@@ -1,0 +1,13 @@
+﻿.icon {
+	@extend %pseudo-element;
+}
+.icon--menu {
+	position: absolute;
+	top: 8px;
+	left: 5px;
+	width: 30px;
+	height: 5px;
+	content: '';
+	border-top: 15px double $white;
+	border-bottom: 5px solid $white;
+}

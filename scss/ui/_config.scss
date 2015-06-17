@@ -1,0 +1,207 @@
+/*------------------------------------*\
+    $DEBUG
+\*------------------------------------*/
+/**
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `true` or `false`.
+ */
+$debug-mode:            false;
+
+
+
+
+/*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+$giga-size:             36px;
+$mega-size:             23px;
+$kilo-size:             19px;
+
+$h1-size:               48px; // .alpha
+$h2-size:               30px; // .beta
+$h3-size:               24px; // .gamma
+$h4-size:               20px; // .delta
+$h5-size:               18px; // .epsilon
+$h6-size:               14px; // .zeta
+
+$milli-size:            13px;
+$micro-size:            12px;
+
+//Line Heights
+$giga-line-height:      38px;
+$mega-line-height:      25px;
+$kilo-line-height:      20px;
+
+$h1-line-height:        50px; // .alpha
+$h2-line-height:        32px; // .beta
+$h3-line-height:        26px; // .gamma
+$h4-line-height:        22px; // .delta
+$h5-line-height:        20px; // .epsilon
+$h6-line-height:        16px; // .zeta
+
+$milli-line-height:     14px;
+$micro-line-height:     14px;
+
+
+
+
+
+/*------------------------------------*\
+    $BEAUTONS
+\*------------------------------------*/
+/**
+ * Set the background colors for beauton button functions.
+ */
+$beautons:          $button-bg;
+$beautons-positive: $button--positive-bg;
+$beautons-negative: $button--negative-bg;
+$beautons-inactive: $button--inactive-bg;
+
+
+
+
+
+
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+/**
+ * Brand stuff
+ */
+$brand-color: $green;
+$brand-face:  $headings-font-family;
+
+/**
+ * How big would you like round corners to be by default?
+ */
+$brand-round: (4px / $base-font-size) + 0em;
+
+
+
+
+
+/*------------------------------------*\
+    $OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+$use-grids:         true;
+$use-flexbox:       true;
+$use-columns:       true;
+$use-nav:           true;
+$use-options:       true;
+$use-pagination:    true;
+$use-breadcrumb:    true;
+$use-media:         true;
+$use-marginalia:    true;
+$use-island:        true;
+$use-block-list:    true;
+$use-matrix:        true;
+$use-split:         true;
+$use-this-or-this:  true;
+$use-link-complex:  true;
+$use-flyout:        true;
+$use-arrows:        true;
+$use-sprite:        true;
+$use-icon-text:     true;
+$use-beautons:      true;
+$use-lozenges:      true;
+$use-rules:         true;
+$use-stats:         true;
+$use-greybox:       true;
+
+/*------------------------------------*\
+    $TERABYTE OBJECTS AND ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * Which objects and abstractions would you like to use?
+ */
+$use-terabyte-beautons:        true;
+$use-terabyte-block-list:      true;
+$use-terabyte-accordion:       true;
+$use-terabyte-figure:          true;
+$use-terabyte-forms:           true;
+$use-terabyte-grids:           true;
+$use-terabyte-icon-text:       true;
+$use-terabyte-icon-font:       true;
+$use-terabyte-lightbox:        true;
+$use-terabyte-list:            true;
+$use-terabyte-megamenu:        true;
+$use-terabyte-nav:             true;
+$use-terabyte-tab:             true;
+$use-terabyte-pagination:      true;
+
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
+/**
+ * Responsiveness?
+ */
+$terabyte-side-gutter:          20px;
+$terabyte-max-width:            960px;
+$terabyte-max-width-full:       $terabyte-max-width + (2 * $terabyte-side-gutter);
+$terabyte-ie-max-width:         960px;
+$terabyte-ie-max-width-full:    $terabyte-ie-max-width + (2 * $terabyte-side-gutter);
+$terabyte-responsive:           true;
+
+/**
+ * Responsiveness for widescreen/high resolution desktop monitors and beyond?
+ * Note: `$terabyte-responsive` variable above must be set to true before enabling this.
+ */
+$terabyte-responsive-extra:  false;
+
+/**
+ * Responsive push and pull produce a LOT of code, only turn them on if you
+ * definitely need them.
+ */
+$terabyte-push:        false;
+/**
+ * Note: `$terabyte-push` variable above must be set to true before enabling these.
+ */
+$extra-small-push:     false;
+$small-push:           false;
+$medium-push:          false;
+$large-push:           false;
+$extra-large-push:     false;
+
+$terabyte-pull:        false;
+
+/**
+ * Note: `$terabyte-pull` variable above must be set to true before enabling these.
+ */
+$extra-small-pull:     false;
+$small-pull:           false;
+$medium-pull:          false;
+$large-pull:           false;
+$extra-large-pull:     false;
+
+/**
+ * Tell terabytenz.css when breakpoints start and end.
+ */
+$extra-small-start:    0;
+$extra-small-end:      479px;
+$small-start:          ($extra-small-end + 1px);
+$small-end:            767px;
+$medium-start:         ($small-end + 1px);
+$medium-end:           1023px;
+$large-start:          ($medium-end + 1px);
+$large-end:            1199px;
+$extra-large-start:    ($large-end + 1px);
+
+
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+/**
+ * inuit.css will work these next ones out for use within the framework.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+$base-spacing-unit: 20px !default;
+$half-spacing-unit: ($base-spacing-unit / 2) !default;
+$quarter-spacing-unit: ($base-spacing-unit / 4) !default;
+$line-height-ratio: $base-line-height / $base-font-size;

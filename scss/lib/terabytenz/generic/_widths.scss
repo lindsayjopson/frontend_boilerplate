@@ -1,0 +1,45 @@
+/*------------------------------------*\
+	$WIDTHS
+\*------------------------------------*/
+/**
+ * Sizes in human readable format. These are used in conjunction with other
+ * objects and abstractions found in inuit.css, most commonly the grid system
+ * and faux flexbox.
+ */
+
+@if $terabyte-responsive == true{
+
+	@include breakpoint(max-width $extra-small-end, $no-query: true){
+		@include grid-setup("xs-");
+	}
+
+	@include breakpoint($small-start, $no-query: true){
+		@include grid-setup("s-");
+	}
+
+	@include breakpoint($medium-start, $no-query: true){
+		@include grid-setup("m-");
+	}
+
+	$include-large-mq-in-ie: ($large-start <= $terabyte-ie-max-width); 
+	@include breakpoint($large-start, $no-query: $include-large-mq-in-ie){
+		@include grid-setup("l-");
+	}
+
+
+	/**
+	 * If you have set the additional `$responsive-extra` variable to ‘true’ in
+	 * `_vars.scss` then you now have access to the following class available to
+	 * accomodate much larger screen resolutions.
+	 */
+
+	@if $terabyte-responsive-extra == true{
+
+		$include-extra-large-mq-in-ie: ($extra-large-start <= $terabyte-ie-max-width); 
+		@include breakpoint($extra-large-start, $no-query: $include-extra-large-mq-in-ie){
+			@include grid-setup("xl-");
+		}
+
+	}
+
+} /* endif */
